@@ -1,0 +1,120 @@
+body {
+    background-color: #20394f;
+    height: 100vh;
+    margin: 0;
+    margin-top: -15vmin;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-ctr {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(2, 17vmin);
+    grid-template-rows: repeat(2, 17vmin);
+    gap: 20vmin;
+    background-color: #24292e;
+    border: 10px solid #202429;
+    border-radius: 50%;
+    height: 85vmin;
+    width: 85vmin;
+}
+
+#title {
+    margin-top: -0.2vmin;
+    margin-bottom: -0.5vmin;
+    color: white;
+    font-size: 15vmin;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+#score {
+    color: white;
+    margin-top: -50vmin;
+    font-size: 7vmin;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+div {
+    margin-top: 31vmin;
+    margin-left: -4vmin;
+}
+
+div#green {
+    background-color: #18a830;
+    border: 7px solid #1cd440;
+    border-radius: 40%;
+    transition: 200ms;
+    height: 18vmin;
+    width: 24vmin;
+}
+
+div#green:hover {
+    background-color: #1cd440;
+    border: 7px solid #18a830;
+}
+
+div#red {
+    background-color: #993026;
+    border: 7px solid #c74b40;
+    border-radius: 40%;
+    transition: 200ms;
+    height: 18vmin;
+    width: 24vmin;
+}
+
+div#red:hover {
+    background-color: #c74b40;
+    border: 7px solid #993026;
+}
+
+div#yellow {
+    background-color: #d6d300;
+    border: 7px solid #fcfa81;
+    border-radius: 40%;
+    transition: 200ms;
+    height: 18vmin;
+    width: 24vmin;
+}
+
+div#yellow:hover {
+    background-color: #fcfa81;
+    border: 7px solid #d6d300;
+}
+
+div#blue {
+    background-color: #113d8a;
+    border: 7px solid #477bd6;
+    border-radius: 40%;
+    transition: 200ms;
+    height: 18vmin;
+    width: 24vmin;
+}
+
+div#blue:hover {
+    background-color: #477bd6;
+    border: 7px solid #113d8a;
+}
+
+button {
+    margin-top: -5vmin;
+    font-size: 3vmin;
+    background-color: #aaaeb5;
+    border: 3px solid white;
+    border-radius: 15%;
+    transition: 200ms;
+}
+
+button:hover {
+    color: white;
+    background-color: #33373d;
+    border: 3px solid white;
+}
