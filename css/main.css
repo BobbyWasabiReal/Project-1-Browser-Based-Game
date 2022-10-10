@@ -22,7 +22,7 @@ body {
     grid-template-rows: repeat(2, 17vmin);
     gap: 20vmin;
     background-color: #24292e;
-    border: 10px solid #202429;
+    border: 3vmin solid #202429;
     border-radius: 50%;
     height: 85vmin;
     width: 85vmin;

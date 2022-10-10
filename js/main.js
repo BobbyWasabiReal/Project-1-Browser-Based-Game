@@ -7,10 +7,15 @@ const BOARD = {
     2: "yellow",
     3: "blue"
 };
+const equals = (pSequence, sequence) =>
+  pSequence.length === sequence.length &&
+  pSequence.every((v, i) => v === sequence[i]);
 
+  
 /*----- state variables -----*/
 // Define the required variables
 // Define the board, turn/score, mistake/lose
+let isPlayingSequence;
 let pSequence;
 let sequence;
 let score;
@@ -34,16 +39,8 @@ const scoreEl = document.getElementById("score");
 // 2. play back the stored pattern (with audio).
 init();
 
-// Computer will generate a random num 0 - 3
-function comChoice() {
-    if (pSequence === sequence) {
-        return Math.floor(Math.random() * BOARD.length);
-        console.log("double check");
-        console.log(comChoice);
-    }
-}
-
 function init() {
+    isPlayingSequence = false;
     sequence = [];
     pSequence = [];
     score = 0;
@@ -51,8 +48,26 @@ function init() {
     render();
 }
 
+function handleChoice()  {
+    
+}
+
+function compareSequnce() {
+    
+}
+
+// Computer will generate a random color,
+// and push it to the sequence array
+function comChoice() {
+    const board = Object.values(BOARD);
+    const rnd = Math.floor(Math.random() * board.length);
+    sequence.push(board[rnd]);
+    console.log(sequence);
+}
+comChoice();
+
 function renderLoss() {
-    if (pSequence !== sequence) {
+    if (equals(pSequence, sequence) === true) {
         loss = true;
     } else {
         loss = false;
@@ -63,21 +78,21 @@ function renderLoss() {
 
 function renderScore() {
     // If choice correct add to the score
-    if (pSequence === sequence) {
-        return score++;
+    if (equals(pSequence, sequence) === true) {
+        score++;
+        scoreEl.innerText = score;
     } else {
-        console.log(":)")
+        console.log(":(");
     }
-    render();
 }
 
 // Replay the sequence
 function renderSequence() {
-    console.log(":(");
+    console.log(":I");
 }
 
 function render() {
     renderLoss();
-    // renderScore();
+    renderScore();
     renderSequence();
 }
