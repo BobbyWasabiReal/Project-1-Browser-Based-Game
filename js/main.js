@@ -25,8 +25,7 @@ const scoreEl = document.getElementById("score");
 /*----- event listeners -----*/
 // Add needed event listeners
 // (One for the board that on click will see
-// if the player's choice matches the computer's, and
-// one that )
+// if the player's choice matches the computer's and one for the play agin button)
 
 
 /*----- functions -----*/
@@ -35,8 +34,16 @@ const scoreEl = document.getElementById("score");
 // 2. play back the stored pattern (with audio).
 init();
 
+// Computer will generate a random num 0 - 3
+function comChoice() {
+    if (pSequence === sequence) {
+        return Math.floor(Math.random() * BOARD.length);
+        console.log("double check");
+        console.log(comChoice);
+    }
+}
+
 function init() {
-    // Computer will generate a random num 0 - 3
     sequence = [];
     pSequence = [];
     score = 0;
@@ -58,17 +65,19 @@ function renderScore() {
     // If choice correct add to the score
     if (pSequence === sequence) {
         return score++;
+    } else {
+        console.log(":)")
     }
     render();
 }
 
 // Replay the sequence
-function renderSquence() {
-    
+function renderSequence() {
+    console.log(":(");
 }
 
 function render() {
     renderLoss();
-    renderScore();
+    // renderScore();
     renderSequence();
 }
