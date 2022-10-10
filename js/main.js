@@ -24,7 +24,7 @@ let loss;
 /*----- cached elements  -----*/
 // Cache the elements for later use
 // (Play again button, and score)
-const playAgainBtn = document.getElementById('play-again');
+const playAgainBtn = document.getElementById("play-again");
 const scoreEl = document.getElementById("score");
 
 /*----- event listeners -----*/
@@ -48,12 +48,13 @@ function init() {
     render();
 }
 
-function handleChoice()  {
+function handleChoice(evt)  {
     
 }
 
 function compareSequnce() {
-    
+
+    score++; 
 }
 
 // Computer will generate a random color,
@@ -79,16 +80,35 @@ function renderLoss() {
 function renderScore() {
     // If choice correct add to the score
     if (equals(pSequence, sequence) === true) {
-        score++;
-        scoreEl.innerText = score;
+        scoreEl.innerText = `Your Score: ${score}`;
     } else {
-        console.log(":(");
+        scoreEl.innerText = `You lose. Your score was ${score}`;
     }
 }
 
 // Replay the sequence
 function renderSequence() {
-    console.log(":I");
+    if (equals(pSequence, sequence) === true) {
+        sequence.forEach(function() {
+            if (sequence.includes("green")) {
+                const greenBtn = document.getElementById("green");
+                greenBtn.style.backgroundColor = "#1cd440";
+                greenBtn.style.borderColor = "#18a830"
+            } else if (sequence.includes("red")) {
+                const redBtn = document.getElementById("red");
+                redBtn.style.backgroundColor = "#c74b40";
+                redBtn.style.borderColor = "#993026";
+            } else if (sequence.includes("yellow")) {
+                const yellowBtn = document.getElementById("yellow");
+                yellowBtn.style.backgroundColor = "#fcfa81";
+                yellowBtn.style.borderColor = "#d6d300";
+            } else if (sequence.includes("blue")) {
+                const blueBtn = document.getElementById("blue");
+                blueBtn.style.backgroundColor = "#477bd6";
+                blueBtn.style.borderColor = "#113d8a";
+            }
+        });
+    };
 }
 
 function render() {
