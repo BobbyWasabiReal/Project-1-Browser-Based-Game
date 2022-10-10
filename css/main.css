@@ -58,8 +58,7 @@ div#green {
 }
 
 div#green:hover {
-    background-color: #1cd440;
-    border: 7px solid #18a830;
+    transform: scale(1.1);
 }
 
 div#red {
@@ -72,8 +71,7 @@ div#red {
 }
 
 div#red:hover {
-    background-color: #c74b40;
-    border: 7px solid #993026;
+    transform: scale(1.1);
 }
 
 div#yellow {
@@ -86,8 +84,7 @@ div#yellow {
 }
 
 div#yellow:hover {
-    background-color: #fcfa81;
-    border: 7px solid #d6d300;
+    transform: scale(1.1);
 }
 
 div#blue {
@@ -97,11 +94,11 @@ div#blue {
     transition: 200ms;
     height: 18vmin;
     width: 24vmin;
+    
 }
 
 div#blue:hover {
-    background-color: #477bd6;
-    border: 7px solid #113d8a;
+    transform: scale(1.1);
 }
 
 button {
@@ -114,7 +111,5 @@ button {
 }
 
 button:hover {
-    color: white;
-    background-color: #33373d;
-    border: 3px solid white;
+    transform: scale(1.1);
 }
