@@ -104,40 +104,32 @@ function renderScore() {
 function renderSequence() {
     if (equals(pSequence, sequence) === true && isPlayingSequence === false) {
         comChoice();
-        isPlayingSequence = true;
 
 
 
-        function displayText(str) {
-            console.log(str);
-         }
-         var i = 0;
-         
-         var a = [12, 3, 45, 6, 7, 10];
-         
-         function timedLoop() {
-         setTimeout(function () {
-             displayText(sequence[i]);
-             i++;
-             if(i < sequence.length) {
-                 timedLoop();
-             }
-         }, 2000)
-         }
-         
-         timedLoop();
+        // function displayText(str) {
+        //     console.log(str);
+        //  }
+        let i = 0;
+        
+        function timedLoop() {
+            setTimeout(function () {
+                // displayText(sequence[i]);
+                colorFlash();
+                i++;
+                if(i < sequence.length) {
+                    timedLoop();
+                }
+            }, 2000);
+        }
+        
+        timedLoop();
 
 
-        for (let i = 0; i < sequence.length; i++) {
+        // for (let i = 0; i < sequence.length; i++) {
+        function colorFlash() {
             if (sequence[i] === "green") {
-                // greenFlash();
-                const greenBtn = document.getElementById("green");
-                greenBtn.style.borderColor = "#18a830";
-                greenBtn.style.backgroundColor = "#1cd440";
-                setTimeout(() => {
-                    greenBtn.style.borderColor = "#1cd440";
-                    greenBtn.style.backgroundColor = "#18a830";
-                }, 3000);
+                greenFlash();
             } else if (sequence[i] === "red") {
                 redFlash();
             } else if (sequence[i] === "yellow") {
@@ -153,6 +145,7 @@ function renderSequence() {
 };
 
 function greenFlash() {
+    const greenBtn = document.getElementById("green");
     greenBtn.style.borderColor = "#18a830";
     greenBtn.style.backgroundColor = "#1cd440";
     setTimeout(() => {
