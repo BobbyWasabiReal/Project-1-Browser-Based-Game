@@ -61,9 +61,9 @@ function init() {
 
 function handleChoice(evt) {
     const board = Object.values(BOARD);
-    if (equals(pSequence, sequence) === true && loss === false && isPlayingSequence ===false) {
-        pSequence.push(":(");
-        console.log(pSequence);
+    if (equals(pSequence, sequence) === true && loss === false && isPlayingSequence === false) {
+        // pSequence.push(":(");
+        // console.log(pSequence);
     }
 }
 
