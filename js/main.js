@@ -57,39 +57,51 @@ function init() {
 }
 
 function handleGreen() {
-    if (equals(pSequence, sequence) === true && loss === false && isPlayingSequence === false) {
+    if (loss === false && isPlayingSequence === false) {
         if (score !== 0) {
+            greenAudio.play();
             pSequence.push("green");
         }
+    } if(pSequence.length === sequence.length && isPlayingSequence === false) {
+        compareSequnce();
+
     }
-    compareSequnce();
 }
 
 function handleRed() {
-    if (equals(pSequence, sequence) === true && loss === false && isPlayingSequence === false) {
+    if (loss === false && isPlayingSequence === false) {
         if (score !== 0) {
+            redAudio.play();
             pSequence.push("red");
         }
+    } if(pSequence.length === sequence.length && isPlayingSequence === false) {
+        compareSequnce();
+
     }
-    compareSequnce();
 }
 
 function handleYellow() {
-    if (equals(pSequence, sequence) === true && loss === false && isPlayingSequence === false) {
+    if (loss === false && isPlayingSequence === false) {
         if (score !== 0) {
+            yellowAudio.play();
             pSequence.push("yellow");
         }
+    } if(pSequence.length === sequence.length && isPlayingSequence === false) {
+        compareSequnce();
+
     }
-    compareSequnce();
 }
 
 function handleBlue() {
-    if (equals(pSequence, sequence) === true && loss === false && isPlayingSequence === false) {
+    if (loss === false && isPlayingSequence === false) {
         if (score !== 0) {
+            blueAudio.play();
             pSequence.push("blue");
         }
+    } if(pSequence.length === sequence.length && isPlayingSequence === false) {
+        compareSequnce();
+
     }
-    compareSequnce();
 }
 
 function compareSequnce() {
