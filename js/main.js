@@ -15,7 +15,6 @@ const BOARD = {
 const equals = (pSequence, sequence) =>
   pSequence.length === sequence.length &&
   pSequence.every((v, i) => v === sequence[i]);
-
   
 /*----- state variables -----*/
 // Define the required variables
@@ -37,10 +36,10 @@ const scoreEl = document.getElementById("score");
 // (One for the board that on click will see
 // if the player's choice matches the computer's and one for the play agin button)
 playAgainBtn.addEventListener("click", init);
-document.getElementById("green").addEventListener("click", handleChoice);
-document.getElementById("red").addEventListener("click", handleChoice);
-document.getElementById("yellow").addEventListener("click", handleChoice);
-document.getElementById("blue").addEventListener("click", handleChoice);
+document.getElementById("green").addEventListener("click", handleGreen);
+document.getElementById("red").addEventListener("click", handleRed);
+document.getElementById("yellow").addEventListener("click", handleYellow);
+document.getElementById("blue").addEventListener("click", handleBlue);
 
 /*----- functions -----*/
 // Define functions
@@ -57,17 +56,50 @@ function init() {
     render();
 }
 
-function handleChoice() {
+function handleGreen() {
     if (equals(pSequence, sequence) === true && loss === false && isPlayingSequence === false) {
-        
-        compareSequnce();
+        if (score !== 0) {
+            pSequence.push("green");
+        }
     }
+    compareSequnce();
+}
+
+function handleRed() {
+    if (equals(pSequence, sequence) === true && loss === false && isPlayingSequence === false) {
+        if (score !== 0) {
+            pSequence.push("red");
+        }
+    }
+    compareSequnce();
+}
+
+function handleYellow() {
+    if (equals(pSequence, sequence) === true && loss === false && isPlayingSequence === false) {
+        if (score !== 0) {
+            pSequence.push("yellow");
+        }
+    }
+    compareSequnce();
+}
+
+function handleBlue() {
+    if (equals(pSequence, sequence) === true && loss === false && isPlayingSequence === false) {
+        if (score !== 0) {
+            pSequence.push("blue");
+        }
+    }
+    compareSequnce();
 }
 
 function compareSequnce() {
     if (pSequence.length === sequence.length) {
-        isPlayingSequence = true;
-        score++;
+        if(equals(pSequence, sequence) === true) {
+            isPlayingSequence = true;
+            score++;
+        } else {
+            loss = true;
+        }
     }
     render();
 }
@@ -127,11 +159,13 @@ function renderSequence() {
             }
         };
         isPlayingSequence = false;
+        pSequence =[];
     } else {
         isPlayingSequence = false;
     }
 };
 
+// Flash functions
 function greenFlash() {
     const greenBtn = document.getElementById("green");
     greenBtn.style.borderColor = "#18a830";
