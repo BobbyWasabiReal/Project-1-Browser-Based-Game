@@ -50,23 +50,26 @@ init();
 
 function init() {
     isPlayingSequence = false;
-    sequence = ["green", "green"];
-    pSequence = ["green", "green"];
+    sequence = [];
+    pSequence = [];
     score = 0;
     loss = false;
     render();
 }
 
 function handleChoice() {
-    const board = Object.values(BOARD);
     if (equals(pSequence, sequence) === true && loss === false && isPlayingSequence === false) {
-
+        
+        compareSequnce();
     }
 }
 
 function compareSequnce() {
-
-    score++;
+    if (pSequence.length === sequence.length) {
+        isPlayingSequence = true;
+        score++;
+    }
+    render();
 }
 
 // Computer will generate a random color,
@@ -99,7 +102,7 @@ function renderScore() {
 
 // Replay the sequence
 function renderSequence() {
-    if (equals(pSequence, sequence) === true && isPlayingSequence === false) {
+    if (equals(pSequence, sequence) === true && isPlayingSequence === true) {
         comChoice();
         let i = 0;
         function timedLoop() {
