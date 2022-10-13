@@ -52,8 +52,8 @@ init();
 
 function init() {
     isPlayingSequence = false;
-    sequence = ["red", "green", "blue"];
-    pSequence = ["red", "green", "blue"];
+    sequence = ["red", "green", "blue", "blue"];
+    pSequence = ["red", "green", "blue", "blue"];
     score = 0;
     loss = false;
     render();
@@ -114,7 +114,7 @@ function renderSequence() {
                 if(i < sequence.length) {
                     timedLoop();
                 }
-            }, 1000);
+            }, 640);
         }
         
         timedLoop();
@@ -143,7 +143,7 @@ function greenFlash() {
     setTimeout(() => {
         greenBtn.style.borderColor = "#1cd440";
         greenBtn.style.backgroundColor = "#18a830";
-    }, 1000);
+    }, 550);
 }
 
 function redFlash() {
@@ -153,7 +153,7 @@ function redFlash() {
     setTimeout(() => {
         redBtn.style.backgroundColor = "#993026";
         redBtn.style.borderColor = "#c74b40";
-    }, 1000);
+    }, 550);
 }
 
 function yellowFlash() {
@@ -163,7 +163,7 @@ function yellowFlash() {
     setTimeout(() => {
         yellowBtn.style.backgroundColor = "#d6d300";
         yellowBtn.style.borderColor = "#fcfa81";
-    }, 1000);
+    }, 550);
 }
 
 function blueFlash() {
@@ -173,7 +173,7 @@ function blueFlash() {
     setTimeout(() => {
         blueBtn.style.backgroundColor = "#113d8a";
         blueBtn.style.borderColor = "#477bd6";
-    }, 1000);
+    }, 550);
 }
 
 function render() {
