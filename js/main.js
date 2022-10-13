@@ -50,8 +50,8 @@ init();
 
 function init() {
     isPlayingSequence = false;
-    sequence = ["green"];
-    pSequence = ["green"];
+    sequence = ["green", "green"];
+    pSequence = ["green", "green"];
     score = 0;
     loss = false;
     render();
@@ -137,6 +137,7 @@ function greenFlash() {
         greenBtn.style.borderColor = "#1cd440";
         greenBtn.style.backgroundColor = "#18a830";
     }, 550);
+    greenAudio.currentTime = 0;
     greenAudio.play();
 }
 
@@ -148,6 +149,7 @@ function redFlash() {
         redBtn.style.backgroundColor = "#993026";
         redBtn.style.borderColor = "#c74b40";
     }, 550);
+    redAudio.currentTime = 0;
     redAudio.play();
 }
 
@@ -159,6 +161,7 @@ function yellowFlash() {
         yellowBtn.style.backgroundColor = "#d6d300";
         yellowBtn.style.borderColor = "#fcfa81";
     }, 550);
+    yellowAudio.currentTime = 0;
     yellowAudio.play();
 }
 
@@ -170,6 +173,7 @@ function blueFlash() {
         blueBtn.style.backgroundColor = "#113d8a";
         blueBtn.style.borderColor = "#477bd6";
     }, 550);
+    blueAudio.currentTime = 0;
     blueAudio.play();
 }
 
