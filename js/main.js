@@ -105,28 +105,20 @@ function renderSequence() {
     if (equals(pSequence, sequence) === true && isPlayingSequence === false) {
         comChoice();
 
-
-
-        // function displayText(str) {
-        //     console.log(str);
-        //  }
         let i = 0;
         
         function timedLoop() {
             setTimeout(function () {
-                // displayText(sequence[i]);
                 colorFlash();
                 i++;
                 if(i < sequence.length) {
                     timedLoop();
                 }
-            }, 2000);
+            }, 1000);
         }
         
         timedLoop();
 
-
-        // for (let i = 0; i < sequence.length; i++) {
         function colorFlash() {
             if (sequence[i] === "green") {
                 greenFlash();
@@ -151,7 +143,7 @@ function greenFlash() {
     setTimeout(() => {
         greenBtn.style.borderColor = "#1cd440";
         greenBtn.style.backgroundColor = "#18a830";
-    }, 3000);
+    }, 1000);
 }
 
 function redFlash() {
@@ -161,7 +153,7 @@ function redFlash() {
     setTimeout(() => {
         redBtn.style.backgroundColor = "#993026";
         redBtn.style.borderColor = "#c74b40";
-    }, 3000);
+    }, 1000);
 }
 
 function yellowFlash() {
@@ -171,7 +163,7 @@ function yellowFlash() {
     setTimeout(() => {
         yellowBtn.style.backgroundColor = "#d6d300";
         yellowBtn.style.borderColor = "#fcfa81";
-    }, 3000);
+    }, 1000);
 }
 
 function blueFlash() {
@@ -181,7 +173,7 @@ function blueFlash() {
     setTimeout(() => {
         blueBtn.style.backgroundColor = "#113d8a";
         blueBtn.style.borderColor = "#477bd6";
-    }, 3000);
+    }, 1000);
 }
 
 function render() {
