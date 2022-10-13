@@ -1,11 +1,9 @@
 /*----- constants -----*/
 // Define the constants (audio)
-const AUDIO = {
-    green: new Audio(),
-    red: new Audio(),
-    yellow: new Audio(),
-    blue: new Audio()
-};
+const greenAudio = new Audio("audio/green.mp3");
+const redAudio = new Audio("audio/red.mp3");
+const yellowAudio = new Audio("audio/yellow.mp3");
+const blueAudio = new Audio("audio/blue.mp3");
 
 const BOARD = {
     0: "green",
@@ -52,18 +50,17 @@ init();
 
 function init() {
     isPlayingSequence = false;
-    sequence = ["red", "green", "blue", "blue"];
-    pSequence = ["red", "green", "blue", "blue"];
+    sequence = ["green"];
+    pSequence = ["green"];
     score = 0;
     loss = false;
     render();
 }
 
-function handleChoice(evt) {
+function handleChoice() {
     const board = Object.values(BOARD);
     if (equals(pSequence, sequence) === true && loss === false && isPlayingSequence === false) {
-        // pSequence.push(":(");
-        // console.log(pSequence);
+
     }
 }
 
@@ -78,7 +75,7 @@ function comChoice() {
     const board = Object.values(BOARD);
     const rnd = Math.floor(Math.random() * board.length);
     sequence.push(board[rnd]);
-    console.log(sequence);
+    // console.log(sequence);
 }
 
 function renderLoss() {
@@ -104,9 +101,7 @@ function renderScore() {
 function renderSequence() {
     if (equals(pSequence, sequence) === true && isPlayingSequence === false) {
         comChoice();
-
         let i = 0;
-        
         function timedLoop() {
             setTimeout(function () {
                 colorFlash();
@@ -116,9 +111,7 @@ function renderSequence() {
                 }
             }, 640);
         }
-        
         timedLoop();
-
         function colorFlash() {
             if (sequence[i] === "green") {
                 greenFlash();
@@ -144,6 +137,7 @@ function greenFlash() {
         greenBtn.style.borderColor = "#1cd440";
         greenBtn.style.backgroundColor = "#18a830";
     }, 550);
+    greenAudio.play();
 }
 
 function redFlash() {
@@ -154,6 +148,7 @@ function redFlash() {
         redBtn.style.backgroundColor = "#993026";
         redBtn.style.borderColor = "#c74b40";
     }, 550);
+    redAudio.play();
 }
 
 function yellowFlash() {
@@ -164,6 +159,7 @@ function yellowFlash() {
         yellowBtn.style.backgroundColor = "#d6d300";
         yellowBtn.style.borderColor = "#fcfa81";
     }, 550);
+    yellowAudio.play();
 }
 
 function blueFlash() {
@@ -174,6 +170,7 @@ function blueFlash() {
         blueBtn.style.backgroundColor = "#113d8a";
         blueBtn.style.borderColor = "#477bd6";
     }, 550);
+    blueAudio.play();
 }
 
 function render() {
