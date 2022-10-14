@@ -1,0 +1,17 @@
+1.  Define the constants (audio)
+
+2. Define the required variables
+(Define the board, turn/score, mistake/lose, a sequence for bothe the player,
+and computer, and whether or not the sequence is being played).
+
+3. Cache the score element for later use
+ (Play again button, and score)
+
+4. Add needed event listeners
+ (One for each button on the board and pushes that choice to the pSequence array).
+
+5. Write functions: 
+
+1. Computer makes a random choice, and store it.
+2. Play back the stored pattern (with audio).
+3. Compare if the player's choice matches the computer's.
