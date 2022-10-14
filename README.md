@@ -13,7 +13,7 @@ Simon is a **Single Player Classic!** First Released in 1978 by Milton Bradley, 
 </div>
 
 <details open>
-  <summary>:framed_picture: Wireframe</summary>
+  <summary>:framed_picture: Wireframe :framed_picture:</summary>
 
   |    Description    | Screenshot | 
   |:-----------------:|-------------| 
@@ -21,7 +21,7 @@ Simon is a **Single Player Classic!** First Released in 1978 by Milton Bradley, 
 </details>
 
 <details open>
-  <summary>:gear: Functionality</summary>
+  <summary>:gear: Functionality :gear:</summary>
 
   |   Description | Screenshot | 
   |:-------------:| -----------|
@@ -49,9 +49,9 @@ Simon is a **Single Player Classic!** First Released in 1978 by Milton Bradley, 
   >
 </details>
 
-<h3>:open_book: Instructions</h3>
+<h3>:open_book: Instructions :open_book:</h3>
 <details open>
-  <summary>:interrobang: How to Play</summary>
+  <summary>:interrobang: How to Play :interrobang: </summary>
   <ol>
     <li>
        To start the game, **_Click_** on any of the Colored Squares on the board!
