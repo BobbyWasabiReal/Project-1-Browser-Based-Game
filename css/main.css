@@ -18,14 +18,14 @@ body {
 
 #board {
     display: grid;
-    grid-template-columns: repeat(2, 13vmin);
-    grid-template-rows: repeat(2, 13vmin);
-    gap: 22vmin;
+    grid-template-columns: repeat(2, 15vmin);
+    grid-template-rows: repeat(2, 15vmin);
+    gap: 21vmin;
     background-color: #24292e;
     border: 3vmin solid #202429;
     border-radius: 50%;
-    height: 80vmin;
-    width: 80vmin;
+    height: 76vmin;
+    width: 96vmin;
 }
 
 #title {
@@ -38,14 +38,18 @@ body {
 
 #score {
     color: white;
-    margin-top: -48vmin;
+    margin-top: -47vmin;
     font-size: 6vmin;
     font-family: 'Gemunu Libre', sans-serif;
 }
 
+footer {
+    margin: 7vmin;
+}
+
 div {
-    margin-top: 33vmin;
-    margin-left: -6.5vmin;
+    margin-top: 25vmin;
+    margin-left: -7vmin;
 }
 
 div#green {
@@ -54,7 +58,7 @@ div#green {
     border-radius: 40%;
     transition: 200ms;
     height: 18vmin;
-    width: 24vmin;
+    width: 28vmin;
 }
 
 div#green:hover {
@@ -67,7 +71,7 @@ div#red {
     border-radius: 40%;
     transition: 200ms;
     height: 18vmin;
-    width: 24vmin;
+    width: 28vmin;
 }
 
 div#red:hover {
@@ -80,7 +84,7 @@ div#yellow {
     border-radius: 40%;
     transition: 200ms;
     height: 18vmin;
-    width: 24vmin;
+    width: 28vmin;
 }
 
 div#yellow:hover {
@@ -93,8 +97,7 @@ div#blue {
     border-radius: 40%;
     transition: 200ms;
     height: 18vmin;
-    width: 24vmin;
-    
+    width: 28vmin;
 }
 
 div#blue:hover {

@@ -6,7 +6,7 @@
 
 ##### Created by Gabriel Covaci
 
-## :grey_question: Description
+## :grey_question: Description :grey_question:
 
 Simon is a **Single Player Classic!** First Released in 1978 by Milton Bradley, Simon quickly became a fan favorite of all. The **Simple**, **Fun**, and **Endless** gameplay was what mainly attributed to it's massive success!
 
@@ -17,10 +17,7 @@ Simon is a **Single Player Classic!** First Released in 1978 by Milton Bradley, 
 
   |    Description    | Screenshot | 
   |:-----------------:|-------------| 
-  | <h3>Game Wireframe</h3>| <img
-    src="images/Screen Shot 2022-10-05 at 6.56.02 PM copy.jpg"
-    width="700"
-  /> |
+  | <h3>Game Wireframe</h3>| <img src="images/Screen Shot 2022-10-05 at 6.56.02 PM copy.jpg" width="700"> |
 </details>
 
 <details open>
@@ -29,15 +26,14 @@ Simon is a **Single Player Classic!** First Released in 1978 by Milton Bradley, 
   |   Description | Screenshot | 
   |:-------------:| -----------|
   | <h3>Starting Screen</h3> | <img
-    src="images/Screen Shot 2022-10-13 at 9.12.49 PM.png"
+    src="images/Screen Shot 2022-10-13 at 10.34.52 PM.png"
     width="700"> |
   | <h3 align="center">Losing Screen</h3> | <img
-    src="images/Screen Shot 2022-10-13 at 5.22.16 PM.png"
-    width="700"
-  /> |
+    src="images/Screen Shot 2022-10-13 at 10.36.43 PM.png"
+    width="700"> |
 </details>
 
-## :computer: Technologies Used
+## :computer: Technologies Used :computer:
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
 ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)
@@ -48,7 +44,7 @@ Simon is a **Single Player Classic!** First Released in 1978 by Milton Bradley, 
 ![Github](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
 ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
 
-<h2>:fire: Getting Started</h2>
+<h2>:fire: Getting Started :fire:</h2>
 
 <details open>
   <summary> :moyai: Deployed Link :moyai: </summary>
@@ -62,13 +58,13 @@ Simon is a **Single Player Classic!** First Released in 1978 by Milton Bradley, 
   <summary>:interrobang: How to Play</summary>
   <ol>
     <li>
-      1. To start the game, **_Click_** on any of the Colored Squares on the board!
+       To start the game, **_Click_** on any of the Colored Squares on the board!
     </li>
     <li>
-      2. Simon will make a sequence from the Colored Squares, starting with one, then two, always adding 1 more to the sequence every time you complete the sequence successfully.
+      Simon will make a sequence from the Colored Squares, starting with one, then two, always adding 1 more to the sequence every time you complete the sequence successfully.
     </li>
     <li>
-      3. The name of the Game? Try to get the **Highest Score Possible**!
+      The name of the Game? Try to get the **Highest Score Possible**!
     </li>
   </ol>
 </details>
