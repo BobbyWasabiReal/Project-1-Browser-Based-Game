@@ -29,10 +29,10 @@ body {
 }
 
 #title {
-    margin-top: -0.2vmin;
-    margin-bottom: -0.5vmin;
+    margin-top: 5vmin;
+    margin-bottom: 1vmin;
     color: white;
-    font-size: 17vmin;
+    font-size: 18vmin;
     font-family: 'Gemunu Libre', sans-serif;
 }
 
