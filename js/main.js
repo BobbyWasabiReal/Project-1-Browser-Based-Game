@@ -170,7 +170,7 @@ function renderSequence() {
                 }
             };
             pSequence =[];
-        }, 300);
+        }, 500);
     } else {
         isPlayingSequence = false;
     }
