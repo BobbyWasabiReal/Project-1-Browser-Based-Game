@@ -25,12 +25,8 @@ Simon is a **Single Player Classic!** First Released in 1978 by Milton Bradley, 
 
   |   Description | Screenshot | 
   |:-------------:| -----------|
-  | <h3>Starting Screen</h3> | <img
-    src="images/Screen Shot 2022-10-13 at 10.34.52 PM.png"
-    width="700"> |
-  | <h3 align="center">Losing Screen</h3> | <img
-    src="images/Screen Shot 2022-10-13 at 10.36.43 PM.png"
-    width="700"> |
+  | <h3>Starting Screen</h3> | <img src="images/Screen Shot 2022-10-13 at 10.34.52 PM.png" width="700"> |
+  | <h3 align="center">Losing Screen</h3> | <img src="images/Screen Shot 2022-10-13 at 10.36.43 PM.png" width="700"> |
 </details>
 
 ## :computer: Technologies Used :computer:
