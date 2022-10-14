@@ -18,34 +18,34 @@ body {
 
 #board {
     display: grid;
-    grid-template-columns: repeat(2, 17vmin);
-    grid-template-rows: repeat(2, 17vmin);
-    gap: 20vmin;
+    grid-template-columns: repeat(2, 13vmin);
+    grid-template-rows: repeat(2, 13vmin);
+    gap: 22vmin;
     background-color: #24292e;
     border: 3vmin solid #202429;
     border-radius: 50%;
-    height: 85vmin;
-    width: 85vmin;
+    height: 80vmin;
+    width: 80vmin;
 }
 
 #title {
     margin-top: -0.2vmin;
     margin-bottom: -0.5vmin;
     color: white;
-    font-size: 15vmin;
+    font-size: 17vmin;
     font-family: 'Gemunu Libre', sans-serif;
 }
 
 #score {
     color: white;
-    margin-top: -52vmin;
-    font-size: 7vmin;
+    margin-top: -48vmin;
+    font-size: 6vmin;
     font-family: 'Gemunu Libre', sans-serif;
 }
 
 div {
-    margin-top: 31vmin;
-    margin-left: -4.8vmin;
+    margin-top: 33vmin;
+    margin-left: -6.5vmin;
 }
 
 div#green {
